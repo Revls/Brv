@@ -1,0 +1,8 @@
+{{#if isLogged}}
+  <h1> Bienvenido {{username}}</h1>
+  {{view Brv.CalendarView tagName="section" class="row"}}
+  {{outlet}}
+{{else}}
+  <h3>Necesitas verificar tus credenciales antes de continuar.</h3>
+  {{#linkTo 'login'}} Login{{/linkTo }}
+{{/if}}

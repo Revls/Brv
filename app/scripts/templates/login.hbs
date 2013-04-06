@@ -1,0 +1,21 @@
+<section id="login">
+  <header>
+    <img {{bindAttr src="iurl"}}/>
+    <h1>{{name}}</h1>
+  </header>
+  {{#view Brv.LoginFormView tagName="form" class="row"}}
+    {{#if view.errorOnLogin}}
+      <p class="palette-alizarin palette center"> Error </p>
+    {{/if}}
+    {{view Ember.TextField valueBinding="view.attempts" type="hidden"}}
+    <div class="span3">
+      {{view Ember.TextField valueBinding="view.username" class="span3"}}
+    </div>
+    <div class="span3">
+      {{view Ember.TextField valueBinding="view.password" class="span3" type="password"}}
+    </div>
+    <div class="span4">
+      <button class="btn btn-large btn-block" name="submit" type="submit" {{action "submitLogin" target="view"}}>Entrar</button>
+    </div>
+  {{/view}}
+</section>

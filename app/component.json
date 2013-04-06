@@ -1,0 +1,8 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "dependencies": {
+    "bonsai": "~0.4.3",
+    "flat-ui": "latest"
+  }
+}

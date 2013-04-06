@@ -1,0 +1,21 @@
+[{
+  "day":5,
+  "month":"abril",
+  "horarios":[{
+    "hid":1,
+    "hora":"600",
+    "bid":1
+  },{
+    "hid":2,
+    "hora":"730",
+    "bid":3
+  },{
+    "hid":3,
+    "hora":"930",
+    "bid":2
+  },{
+    "hid":4,
+    "hora":"1030",
+    "bid":4
+  }]
+}]
